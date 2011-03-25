@@ -1,5 +1,4 @@
 /* @override 
-	http://localhost/style.css
 	http://localhost/~gad/geoffreyd.github.com/style.css
 */
 
@@ -52,7 +51,7 @@ li label{
   font-size: 18px;
 }
 li span {
-  font-family: Inconsolata, "Courier New", Courier, mono;
+  font-family: 'Inconsolata', "Courier New", Courier, mono;
   font-size: 25px;
   display: inline-block;
   position:relative;
