@@ -1,0 +1,60 @@
+/* @override 
+	http://localhost/style.css
+	http://localhost/~gad/geoffreyd.github.com/style.css
+*/
+
+* { margin: 0; padding: 0; }
+body {
+  font-family: Cabin, 'Lucida Grande', Verdana, sans-serif;
+  background-color: #d9dbdb;
+  overflow: auto;
+  color: #444;
+  font-size: 16px;
+  margin-top: 100px;
+}
+H1 {
+  font-family: 'Ubuntu', serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: #e5e5ee 0 1px 0;
+  line-height: 1.2;
+  color: #5b5b5b;
+  text-align: center;
+}
+
+ul {
+  margin-top: 50px;
+  width: 300px;
+  display: table;
+  position:relative;
+  left: 50%;
+  margin-left: -150px;
+}
+
+a {
+  text-decoration: none;
+  color: #425a77;
+  text-shadow: #cfd3b6 0 -1px 0;
+}
+
+li {
+  height: 40px;
+  display:table-row;
+}
+li label, li span {
+  display:table-cell;
+}
+li label{
+  text-align: right;
+  padding-right: 20px;
+  font-family: 'Raleway', serif;
+  font-size: 18px;
+}
+li span {
+  font-family: Inconsolata, "Courier New", Courier, mono;
+  font-size: 25px;
+  display: inline-block;
+  position:relative;
+  top: 2px;
+}
