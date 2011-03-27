@@ -22,40 +22,32 @@
   <body>
     <H1>Geoffrey Donaldson</H1>
     <ul>
-      <li><label>I live in</label> <span><a href='http://en.wikipedia.org/wiki/Brisbane'>Brisbane</a></span></li>
-      <li><label>I work with</label> <span><a href='http://developer.mozilla.org'>Javascript</a></span></li>
-      <li><label>I specialise in</label> <span><a href='http://www.sproutcore.com/'>SproutCore</a></span></li>
-      <li><label>My code is on</label><span><a href="http://github.com/geoffreyd">GitHub</a></span></li>
-      <li><label>Contact me</label><span><a href="https://github.com/inbox/new/geoffreyd">Here</a></span></li>
+      <li>
+        <label>I live in</label>
+        <span><a href='http://en.wikipedia.org/wiki/Brisbane'>Brisbane</a></span>
+        <img src="images/en.wikipedia.org.wiki.Brisbane.png" alt='preview'>
+      </li>
+      <li>
+        <label>I work with</label>
+        <span><a href='http://developer.mozilla.org'>Javascript</a></span>
+        <img src="images/developer.mozilla.org.png" alt='preview'>
+      </li>
+      <li>
+        <label>I specialise in</label>
+        <span><a href='http://www.sproutcore.com/'>SproutCore</a></span>
+        <img src="images/www.sproutcore.com.png" alt='preview'>
+      </li>
+      <li>
+        <label>My code is on</label>
+        <span><a href="http://github.com/geoffreyd">GitHub</a></span>
+        <img src="images/github.com.geoffreyd.png" alt='preview'>
+      </li>
+      <li>
+        <label>Contact me</label>
+        <span><a href="https://github.com/inbox/new/geoffreyd">Here</a></span>
+        <img src="images/github.com.inbox.new.geoffreyd.png" alt='preview'>
+      </li>
     </ul>
-
-    <script type="text/javascript">
-      var iframes = {};
-      $('body>ul>li a').hover(
-        function(evt){
-          var target = evt.target,
-              url = target.href,
-              iframe = iframes[url];
-          if(iframe) {
-            iframe.addClass("peek-frame");
-          } else {
-            console.log('doh!');
-          }
-        },
-        function(evt){
-          $('iframe').removeClass("peek-frame");
-        }
-      );
-      $('body>ul>li a').each(function(idx, item) {
-        var url = item.href,
-            iframe;
-        iframe = $('<iframe />', {
-          src: url
-        });
-        iframes[url]=iframe;
-        iframe.appendTo('body');
-      })
-    </script>
 
   </body>
 </html>
