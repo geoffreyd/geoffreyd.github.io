@@ -4,6 +4,8 @@
     <title>Geoffrey Donaldson</title>
     <link rel="openid2.provider" href="https://www.google.com/accounts/o8/ud?source=profiles" > 
     <link rel="openid2.local_id" href="http://www.google.com/profiles/geoffreyd" >
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
     <link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css" >
     <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css" >
     <link href="http://fonts.googleapis.com/css?family=Inconsolata:regular" rel="stylesheet" type="text/css" >
@@ -26,5 +28,34 @@
       <li><label>My code is on</label><span><a href="http://github.com/geoffreyd">GitHub</a></span></li>
       <li><label>Contact me</label><span><a href="https://github.com/inbox/new/geoffreyd">Here</a></span></li>
     </ul>
+
+    <script type="text/javascript">
+      var iframes = {};
+      $('body>ul>li a').hover(
+        function(evt){
+          var target = evt.target,
+              url = target.href,
+              iframe = iframes[url];
+          if(iframe) {
+            iframe.addClass("peek-frame");
+          } else {
+            console.log('doh!');
+          }
+        },
+        function(evt){
+          $('iframe').removeClass("peek-frame");
+        }
+      );
+      $('body>ul>li a').each(function(idx, item) {
+        var url = item.href,
+            iframe;
+        iframe = $('<iframe />', {
+          src: url
+        });
+        iframes[url]=iframe;
+        iframe.appendTo('body');
+      })
+    </script>
+
   </body>
 </html>

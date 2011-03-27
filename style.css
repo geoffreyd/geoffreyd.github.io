@@ -6,7 +6,7 @@
 body {
   font-family: Cabin, 'Lucida Grande', Verdana, sans-serif;
   background-color: #d9dbdb;
-  overflow: auto;
+  overflow: hidden;
   color: #444;
   font-size: 16px;
   margin-top: 100px;
@@ -56,4 +56,31 @@ li span {
   display: inline-block;
   position:relative;
   top: 2px;
+}
+
+iframe {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -transition: all 1s ease-out;
+
+  border:none;
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: -50px;
+  right: -850px;
+  -moz-box-shadow: -5px 5px 10px #AAA;
+  -webkit-box-shadow: -5px 5px 10px #AAA;
+  box-shadow: -5px 5px 10px #AAA;
+}
+
+.peek-frame {
+  right: -450px;
+  -moz-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  transform-origin: top right;
+  -moz-transform-origin: top right;
+  -webkit-transform-origin: top right;
 }
