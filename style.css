@@ -10,6 +10,7 @@ body {
   color: #444;
   font-size: 16px;
   margin-top: 100px;
+  max-width: 1024px;
 }
 H1 {
   font-family: 'Ubuntu', serif;
@@ -26,9 +27,8 @@ ul {
   margin-top: 50px;
   width: 300px;
   display: table;
-  position:relative;
-  left: 50%;
-  margin-left: -150px;
+  margin-left: auto ;
+  margin-right: auto ;
 }
 
 a {
@@ -66,8 +66,8 @@ li img {
 
   border:none;
   position: absolute;
-  top: -150px;
-  right: -850px;
+  top: 150px;
+  right: -460px;
   -moz-box-shadow: -5px 5px 10px #AAA;
   -webkit-box-shadow: -5px 5px 10px #AAA;
   box-shadow: -5px 5px 10px #AAA;
@@ -76,7 +76,7 @@ li img {
 
 /*.peek-frame {*/
 li:hover img {
-  right: -450px;
+  right: -80px;
   -moz-transform: rotate(-20deg);
   -webkit-transform: rotate(-20deg);
   transform: rotate(-20deg);
