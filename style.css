@@ -66,11 +66,10 @@ li img {
   border:none;
   position: absolute;
   top: 150px;
-  right: -460px;
+  right: -480px;
   -moz-box-shadow: -5px 5px 10px #AAA;
   -webkit-box-shadow: -5px 5px 10px #AAA;
   box-shadow: -5px 5px 10px #AAA;
-  opacity: 0;
 }
 
 /*.peek-frame {*/
@@ -82,5 +81,4 @@ li:hover img {
   transform-origin: top right;
   -moz-transform-origin: top right;
   -webkit-transform-origin: top right;
-  opacity: 1;
 }
