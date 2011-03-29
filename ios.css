@@ -1,0 +1,22 @@
+/*
+	iOS/Mobile Only
+ */
+body {
+  -webkit-text-size-adjust: 150%;
+}
+ul {
+  margin-top: 70px;
+  width:800px;
+  -webkit-text-size-adjust: 300%;
+}
+li label{
+  padding-right: 50px;
+  /*background: url('images/arrow.png') no-repeat -8px 3px;*/
+}
+li {
+  height: 140px;
+}
+
+li img {
+  display:none;
+}
