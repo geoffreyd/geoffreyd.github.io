@@ -20,3 +20,31 @@ li {
 li img {
   display:none;
 }
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For iPad portrait layouts only */
+  body {
+    margin-top: 150px;
+  }
+  ul {
+    margin-top: 200px;
+    -webkit-text-size-adjust: 200%;
+  }
+  li {
+    height: 100px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For iPad landscape layouts only */
+  body {
+    margin-top: 50px;
+  }
+  ul {
+    margin-top: 80px;
+    -webkit-text-size-adjust: 150%;
+  }
+  li {
+    height: 70px;
+  }
+}

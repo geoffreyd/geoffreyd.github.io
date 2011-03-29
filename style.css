@@ -71,6 +71,11 @@ li img {
   -webkit-box-shadow: -5px 5px 10px #AAA;
   box-shadow: -5px 5px 10px #AAA;
 }
+/*@media only screen and (device-width: 768px) {
+  li img {
+    display:none;
+  }
+}*/
 
 /*.peek-frame {*/
 li:hover img {
