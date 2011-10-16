@@ -6,11 +6,22 @@
 body {
   font-family: Cabin, 'Lucida Grande', Verdana, sans-serif;
   background-color: #d9dbdb;
-  overflow: hidden;
   color: #444;
   font-size: 16px;
-  margin-top: 100px;
 }
+
+.spacer {
+  height: 100px;
+}
+
+.nav.float-center {
+  width: 600px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-family: 'Cabin';
+}
+
 H1 {
   font-family: 'Ubuntu', serif;
   font-size: 60px;
@@ -22,12 +33,30 @@ H1 {
   text-align: center;
 }
 
-ul {
-  margin-top: 50px;
+h2 {
+  color: #5b5b5b;
+  font-family: 'Raleway', serif;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-top: 16px;
+}
+
+.float-center {
   width: 300px;
-  display: table;
   margin-left: auto ;
   margin-right: auto ;
+}
+#content.float-center {
+  width: 550px;
+  margin-top: 50px;
+}
+
+ul {
+  margin-top: 50px;
+  display: table;
 }
 
 a {
@@ -86,4 +115,11 @@ li:hover img {
   transform-origin: top right;
   -moz-transform-origin: top right;
   -webkit-transform-origin: top right;
+}
+
+body>p {
+  margin-top: 50px;
+  width: 400px;
+  margin-left: auto ;
+  margin-right: auto ;
 }
