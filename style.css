@@ -10,6 +10,10 @@ body {
   font-size: 16px;
 }
 
+.no-overflow {
+  overflow:hidden;
+}
+
 .spacer {
   height: 100px;
 }
