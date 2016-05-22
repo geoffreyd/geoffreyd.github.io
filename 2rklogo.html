@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>2rk Logo</title>
+	<style>
+/*    html {
+      height:100%;
+    }
+    body {
+      background-color: #FFFFFF;
+      margin:0;
+      height:100%;
+    }*/
+	</style>
+
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=yes, width=600" />
+
+
+	<!-- end copy -->
+
+  </head>
+  <body>
+	
+	<!-- copy these lines to your document: -->
+
+	<div id="logo2rk_container" style="margin:auto;position:relative;width:190px;height:200px;overflow:hidden;" aria-live="polite">
+		
+    <div id="k1" class="kite-body"></div>    
+    <div id="t1" class="kite-tail"></div>
+    <div id="k2" class="kite-body"></div>
+    <div id="t2" class="kite-tail"></div>
+
+    <style type="text/css" media="screen">    
+      div#logo2rk_container > div {
+        position: absolute;
+        background-color: #A51403;
+        border: solid white 7px;
+        box-sizing: content-box;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      
+      .kite-body, .kite-tail {
+        height: 82px;
+        width: 83px;
+        transform: rotate(-37deg) skew(-13.4deg);
+      }
+      .kite-tail {
+        border: none !important;
+      }
+      #k1 {
+        z-index: 10;
+        animation-name: flutter-k1;
+      }
+      #t1 {
+        height: 28px;
+        width: 28px;
+        animation-name: flutter-t1;
+      }
+      #k2 {
+        top: 42px;
+        left: 69px;
+        z-index: 9;
+        animation-name: flutter-k2;
+      }
+      #t2 {
+        height: 16px;
+        width: 16px;
+        animation-name: flutter-t2;
+      }
+      
+      @keyframes flutter-k1 {
+        0%   { top: 27px; left: 17px; }
+        33%  { top: 37px; left: 27px; }
+        66%  { top: 27px; left: 30px; }
+        100% { top: 27px; left: 17px; }
+      }
+      @keyframes flutter-t1 {
+        0%   { top: 142px; left: 48px; }
+        33%  { top: 158px; left: 50px; }
+        66%  { top: 158px; left: 42px; }
+        100% { top: 142px; left: 48px; }
+      }
+      @keyframes flutter-k2 {
+        0%   { top: 42px; left: 69px; }
+        33%  { top: 37px; left: 75px; }
+        66%  { /*top: 27px;*/ left: 74px; }
+        100% { top: 42px; left: 69px; }
+      }
+      @keyframes flutter-t2 {
+        0%   { top: 169px; left: 77px; }
+        33%  { top: 160px; left: 90px; }
+        66%  { /*top: 27px;*/ left: 85px; }
+        100% { top: 169px; left: 77px; }
+      }
+    </style>
+
+	<!-- end copy -->
+
+
+  </body>
+</html>
