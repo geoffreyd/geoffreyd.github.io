@@ -10,28 +10,31 @@
       div#logo2rk_container > div {
         position: absolute;
         background-color: #A51403;
-        border: solid white 7px;
         box-sizing: content-box;
         animation-duration: 4s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
       
+      .kite-body {
+          margin: 7px;
+      }
       .kite-body, .kite-tail {
         height: 82px;
         width: 83px;
         transform: rotate(-37deg) skew(-13.4deg);
       }
-      .kite-tail {
-        border: none !important;
-      }
       #k1 {
         top: 27px; left: 17px;
         z-index: 10;
         animation-name: flutter-k1;
+        -webkit-box-shadow: 7px 7px 0 white;
+        -moz-box-shadow: 7px 7px 0 white;
+        box-shadow: 7px 7px 0 white;
       }
       #t1 {
         top: 142px; left: 48px;
+        z-index: 12;
         height: 28px;
         width: 28px;
         animation-name: flutter-t1;
@@ -55,22 +58,25 @@
         100% { top: 27px; left: 17px; }
       }
       @keyframes flutter-t1 {
-        0%   { top: 142px; left: 48px; }
+        0%   { top: 142px; left: 48px; transform: rotate(-37deg) skew(-13.4deg) scale(1); }
         33%  { top: 158px; left: 50px; }
-        66%  { top: 158px; left: 42px; }
-        100% { top: 142px; left: 48px; }
+        50%  { transform: rotate(-37deg) skew(-13.4deg) scale(0.8); }
+        66%  { top: 150px; left: 46px; }
+        100% { top: 142px; left: 48px; transform: rotate(-37deg) skew(-13.4deg) scale(1); }
       }
       @keyframes flutter-k2 {
-        0%   { top: 42px; left: 69px; }
+        0%   { top: 42px; left: 69px; transform: rotate(-37deg) skew(-13.4deg) scale(1); }
         33%  { top: 37px; left: 75px; }
+        50%  { transform: rotate(-37deg) skew(-13.4deg) scale(1.1); }
         66%  { /*top: 27px;*/ left: 74px; }
-        100% { top: 42px; left: 69px; }
+        100% { top: 42px; left: 69px; transform: rotate(-37deg) skew(-13.4deg) scale(1); }
       }
       @keyframes flutter-t2 {
-        0%   { top: 169px; left: 77px; }
+        0%   { top: 169px; left: 77px; transform: rotate(-37deg) skew(-13.4deg) scale(1); }
         33%  { top: 160px; left: 90px; }
+        50%  { transform: rotate(-37deg) skew(-13.4deg) scale(1.1); }
         66%  { /*top: 27px;*/ left: 85px; }
-        100% { top: 169px; left: 77px; }
+        100% { top: 169px; left: 77px; transform: rotate(-37deg) skew(-13.4deg) scale(1); }
       }
     </style>
     
