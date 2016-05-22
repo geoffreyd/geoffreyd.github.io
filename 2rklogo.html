@@ -1,38 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
-	<title>2rk Logo</title>
-	<style>
-/*    html {
-      height:100%;
-    }
-    body {
-      background-color: #FFFFFF;
-      margin:0;
-      height:100%;
-    }*/
-	</style>
-
-	<!-- copy these lines to your document head: -->
-
-	<meta name="viewport" content="user-scalable=yes, width=600" />
-
-
-	<!-- end copy -->
-
-  </head>
-  <body>
-	
-	<!-- copy these lines to your document: -->
-
-	<div id="logo2rk_container" style="margin:auto;position:relative;width:190px;height:200px;overflow:hidden;" aria-live="polite">
-		
-    <div id="k1" class="kite-body"></div>    
-    <div id="t1" class="kite-tail"></div>
-    <div id="k2" class="kite-body"></div>
-    <div id="t2" class="kite-tail"></div>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+    <title>2rk Logo</title>
+    <meta name="viewport" content="user-scalable=yes, width=600" />
 
     <style type="text/css" media="screen">    
       div#logo2rk_container > div {
@@ -54,21 +26,23 @@
         border: none !important;
       }
       #k1 {
+        top: 27px; left: 17px;
         z-index: 10;
         animation-name: flutter-k1;
       }
       #t1 {
+        top: 142px; left: 48px;
         height: 28px;
         width: 28px;
         animation-name: flutter-t1;
       }
       #k2 {
-        top: 42px;
-        left: 69px;
+        top: 42px; left: 69px;
         z-index: 9;
         animation-name: flutter-k2;
       }
       #t2 {
+        top: 169px; left: 77px;
         height: 16px;
         width: 16px;
         animation-name: flutter-t2;
@@ -99,9 +73,14 @@
         100% { top: 169px; left: 77px; }
       }
     </style>
-
-	<!-- end copy -->
-
-
+    
+  </head>
+  <body>
+    <div id="logo2rk_container" style="margin:auto;position:relative;width:190px;height:200px;overflow:hidden;" aria-live="polite">
+      <div id="k1" class="kite-body"></div>    
+      <div id="t1" class="kite-tail"></div>
+      <div id="k2" class="kite-body"></div>
+      <div id="t2" class="kite-tail"></div>
+    </div>
   </body>
 </html>
