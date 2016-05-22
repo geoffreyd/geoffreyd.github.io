@@ -17,7 +17,7 @@
       }
       
       .kite-body {
-          margin: 7px;
+        margin: 7px;
       }
       .kite-body, .kite-tail {
         height: 82px;
@@ -26,22 +26,23 @@
       }
       #k1 {
         top: 27px; left: 17px;
-        z-index: 10;
         animation-name: flutter-k1;
-        -webkit-box-shadow: 7px 7px 0 white;
-        -moz-box-shadow: 7px 7px 0 white;
-        box-shadow: 7px 7px 0 white;
+      }
+      #k1-shadow {
+        background-color: white !important;
+        top: 27px; left: 17px;
+        margin-top: 9px;
+        margin-left: 16px;
+        animation-name: flutter-k1, shadow;
       }
       #t1 {
         top: 142px; left: 48px;
-        z-index: 12;
         height: 28px;
         width: 28px;
         animation-name: flutter-t1;
       }
       #k2 {
         top: 42px; left: 69px;
-        z-index: 9;
         animation-name: flutter-k2;
       }
       #t2 {
@@ -56,6 +57,11 @@
         33%  { top: 37px; left: 27px; }
         66%  { top: 27px; left: 30px; }
         100% { top: 27px; left: 17px; }
+      }
+      @keyframes shadow {
+        0%   { transform: rotate(-37deg) skew(-13.4deg) scale(1); }
+        50%  { transform: rotate(-37deg) skew(-13.4deg) scale(0.95); }
+        100% { transform: rotate(-37deg) skew(-13.4deg) scale(1); }
       }
       @keyframes flutter-t1 {
         0%   { top: 142px; left: 48px; transform: rotate(-37deg) skew(-13.4deg) scale(1); }
@@ -83,10 +89,11 @@
   </head>
   <body>
     <div id="logo2rk_container" style="margin:auto;position:relative;width:190px;height:200px;overflow:hidden;" aria-live="polite">
-      <div id="k1" class="kite-body"></div>    
-      <div id="t1" class="kite-tail"></div>
       <div id="k2" class="kite-body"></div>
       <div id="t2" class="kite-tail"></div>
+      <div id="k1-shadow" class="kite-body"></div>
+      <div id="k1" class="kite-body"></div>
+      <div id="t1" class="kite-tail"></div>
     </div>
   </body>
 </html>
