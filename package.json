@@ -18,10 +18,10 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.2",
     "@ember-decorators/babel-transforms": "^2.1.2",
     "@ember/optional-features": "^0.7.0",
     "@glimmer/component": "^0.14.0-alpha.3",
+    "babel-eslint": "^8.0.2",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.2.20",
     "ember-cli": "github:ember-cli/ember-cli#ed51787b3e18efee706f163d57836a30cd5286b7",
@@ -32,7 +32,9 @@
     "ember-cli-htmlbars": "^3.0.0",
     "ember-cli-htmlbars-inline-precompile": "^2.0.0",
     "ember-cli-inject-live-reload": "^2.0.1",
+    "ember-cli-sass": "^10.0.0",
     "ember-cli-sri": "^2.1.1",
+    "ember-cli-tailwind": "^0.7.0",
     "ember-cli-template-lint": "^1.0.0-beta.1",
     "ember-cli-uglify": "^2.1.0",
     "ember-data": "github:emberjs/data#739f78e381762525b90bbf91c96578b2ca418e62",
@@ -46,7 +48,8 @@
     "eslint-plugin-ember": "^6.0.1",
     "eslint-plugin-node": "^8.0.1",
     "loader.js": "^4.7.0",
-    "qunit-dom": "^0.8.0"
+    "qunit-dom": "^0.8.0",
+    "sass": "^1.17.3"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
