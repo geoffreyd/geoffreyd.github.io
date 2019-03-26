@@ -1,8 +1,23 @@
-<div class="rounded bg-grey-lightest">
-  <h1 class="rounded-t p-3 bg-grey-light">
-    Geoffrey Bitsmith
-  </h1>
-  <div class="p-3">
+<div class="rounded">
 
-  </div>
+  {{#animated-value "index-route" initialInsertion=true finalRemoval=true use=this.transition duration=1000}}
+    <AnimatedContainer>
+      <h1 class="rounded-t p-3 whitespace-no-wrap text-center">
+        Geoffrey Bitsmith
+      </h1>
+    </AnimatedContainer>
+    <div class="p-3 flex flex-col md:flex-row">
+      {{#each this.links as |link|}}
+        <LinkTo @route={{link.path}} class="card p-1 m-1">
+          <AnimatedContainer>
+            {{#animated-value link.path duration=1000 as |l|}}
+              <div class="hero-list-image w-64 h-64">
+                {{svg-jar link.svg}}
+              </div>
+            {{/animated-value}}
+          </AnimatedContainer>
+        </LinkTo>
+      {{/each}}
+    </div>
+  {{/animated-value}}
 </div>

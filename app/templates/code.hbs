@@ -1,0 +1,21 @@
+<div class="hero-detail w-5/6 max-w-md border-l-64 border-blue pb-3">
+
+  <h2 class="flex flex-row bg-grey-light py-6 px-4 text-center">
+    <AnimatedContainer>
+      {{#animated-value "code" use=this.transition duration=1000}}
+        <div class="hero-list-image absolute pin-l w-12 h-12 -ml-18 -mt-3">
+          {{svg-jar "code"}}
+        </div>
+      {{/animated-value}}
+    </AnimatedContainer>
+
+    Code
+  </h2>
+
+  <div class="p-3">
+    <p>
+      This is after the image.
+    </p>
+  </div>
+
+</div>
